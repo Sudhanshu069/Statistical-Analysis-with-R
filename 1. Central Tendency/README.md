@@ -16,3 +16,10 @@ The main objectives of this practical are:
 
 - RStudio
 - R 4.3.2
+
+# Outputs
+![Data](output1.png)
+
+
+![Graphical Representation](output2.png)
+
