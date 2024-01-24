@@ -1,0 +1,44 @@
+if (!requireNamespace("ggplot2", quietly = TRUE)) {
+  install.packages("ggplot2")
+}
+library(ggplot2)
+
+myData = read.csv("CardioGoodFitness.csv",
+                  stringsAsFactors=F)
+print(head(myData))
+#Mean
+mean = mean(myData$Age)
+print(mean)
+
+#Median
+median = median(myData$Age)
+print(median)
+
+#Mode
+mode = function(){
+  return(sort(-table(myData$Age))[1])
+}
+
+mode()
+# central tendency
+# Calculate central tendency measures
+mean_value <- mean(myData$Age)
+median_value <- median(myData$Age)
+mode_value <- function(x) {
+  tbl <- table(x)
+  mode <- as.numeric(names(tbl[tbl == max(tbl)]))
+  return(mode)
+}
+mode_result <- mode_value(myData$Age)
+
+
+# Visualization
+ggplot(myData, aes(x = Age)) +
+  geom_histogram(binwidth = 5, fill = "skyblue", color = "black", alpha = 0.7) +
+  geom_vline(xintercept = mean_value, linetype = "dashed", color = "red", size = 1) +
+  geom_vline(xintercept = median_value, linetype = "dashed", color = "blue", size = 1) +
+  geom_vline(xintercept = mode_result, linetype = "dashed", color = "green", size = 1) +
+  labs(title = "Distribution of Age with Central Tendency Measures",
+       x = "Age",
+       y = "Frequency") +
+  theme_minimal()
