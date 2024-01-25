@@ -9,3 +9,4 @@
 ---
 # List of Experiments
 1. Central Tendency
+2. Statistical Variation
