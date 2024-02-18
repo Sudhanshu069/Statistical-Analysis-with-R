@@ -18,3 +18,13 @@ The primary objectives of this practical are:
 
 - RStudio or R environment installed.
 - A real-world dataset (e.g., a CSV file) for analysis.
+
+# Outputs
+### Data
+![data output](./output1.png)
+
+### Histogram Representation
+![Theoretical Probabilities](./output2.png)
+
+### Bar Plot Representation
+![Empirical Probabilities](./output3.png)
