@@ -10,3 +10,5 @@
 # List of Experiments
 1. Central Tendency
 2. Statistical Variation
+3. Probabilities
+4. Data Manipulation
