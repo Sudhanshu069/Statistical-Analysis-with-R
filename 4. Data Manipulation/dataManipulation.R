@@ -3,7 +3,7 @@ install.packages("readr")
 library(readr)
 
 # Import the dataset into an R data frame
-dataset <- read.csv("D:/Practice/r/Statistical-Analysis-with-R/4/dataset/globalterrorismdb.csv")
+dataset <- read.csv("D:/Practice/r/Statistical-Analysis-with-R/4. Data Manipulation/dataset/globalterrorismdb.csv")
 
 # Display the structure of the data frame
 str(dataset)
